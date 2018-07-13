@@ -21,29 +21,38 @@
 </head>
 
 <body>
+
+    <!--Navbar-->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
         <div class="container">
             <a class="navbar-brand text-monospace logo" href="index.html" style="font-family:Actor, sans-serif;">S.I</a>
+
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="hire-me.html">Contact</a>
+                        <a class="nav-link" href="contactMe.html">Contact</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" href="#">About Me</a>
+                        <a class="nav-link active" href="aboutMe.html">About Me</a>
                     </li>
                 </ul>
                 <button class="btn btn-primary float-left" type="button" style="background-color:rgb(97,193,241);width:100px;height:46px;">Resume</button>
             </div>
+
         </div>
     </nav>
+
+
+
+    <!--Hero Banner-->
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro">
             <div class="container">
@@ -57,6 +66,10 @@
             </div>
         </section>
     </main>
+
+
+
+    <!--What I can do section-->
     <div class="features-boxed">
         <div class="container">
             <div class="intro">
@@ -93,6 +106,10 @@
             </div>
         </div>
     </div>
+
+
+
+    <!--My Projects-->
     <div class="projects-clean">
         <div class="container">
             <div class="intro">
@@ -101,7 +118,7 @@
             </div>
             <div class="row projects">
                 <div class="col-sm-6 col-lg-4 item">
-                    <img class="img-fluid" src="assets/img/bis.png">
+                    <img class="img-fluid" src="assets/img/bis.png" onclick="open(URL)">
                     <h3 class="name">Broadview Immigration Services</h3>
                     <p class="description">The complete website for a Toronto based immigration consultancy company. Created using the WIX Development
                         Platform. I also did the SEO and site performance optimization.</p>
@@ -122,6 +139,10 @@
             </div>
         </div>
     </div>
+
+
+
+    <!--Skillset Percentage Card-->
     <div class="skills portfolio-info-card" style="width:863px;margin:10px auto;">
         <h2>My Current Skillset:</h2>
         <h3>HTML</h3>
@@ -143,6 +164,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <!--Footer-->
     <footer class="page-footer">
         <div class="container">
             <div class="links">
@@ -162,6 +188,10 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!--Scripts-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/theme.js"></script>
