@@ -1,196 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The home page of MD Hasan Sahria Iqbal's portfolio">
-    <title>Home | Swapnil Iqbal</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <meta charset="UTF-8">
+    <title>FitCo | Home</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
+    <header class="wrapper">
+        <nav>
+            <a href="index.html" class="logo">FitCo</a>
+            <ul class="desktop">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="downloadNavBtn">Download</a>
+                </li>
+            </ul>
+        </nav>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container">
-            <a class="navbar-brand text-monospace logo" href="index.html" style="font-family:Actor, sans-serif;">S.I</a>
-
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="contactMe.html">Contact</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" href="aboutMe.html">About Me</a>
-                    </li>
-                </ul>
-                <button class="btn btn-primary float-left" type="button" style="background-color:rgb(97,193,241);width:100px;height:46px;">Resume</button>
-            </div>
-
-        </div>
-    </nav>
-
-
-
-    <!--Hero Banner-->
-    <main class="page lanidng-page">
-        <section class="portfolio-block block-intro">
-            <div class="container">
-                <div class="avatar" style="background-image:url(&quot;assets/img/32019440_166789190658657_2877822100582694912_n.jpg&quot;);"></div>
-                <div class="about-me">
-                    <p class="pulse animated" style="font-size:60px;font-family:'Alfa Slab One', cursive;">
-                        <strong>Swapnil Iqbal</strong>
-                    </p>
-                    <a class="btn btn-outline-primary pulse animated" role="button" href="#" style="font-size:25px;">About Me</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-    <!--What I can do section-->
-    <div class="features-boxed">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">What I Can Do</h2>
-            </div>
-            <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <i class="fa fa-paint-brush icon"></i>
-                        <h3 class="name">Website Design</h3>
-                        <p class="description">I love to design websites, and I am capable of using programs such as Adobe Photoshop, Dreamweaver or Adobe Muse to put together quick designs.</p>
-                        <a href="contactMe.html" class="learn-more">Learn more »</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <i class="fa fa-code icon"></i>
-                        <h3 class="name">Website Development</h3>
-                        <p class="description">After the design phase comes the part where I code up the website using HTML, CSS and JavaScript, as well as some of my favourite frameworks like Bootstrap.</p>
-                        <a href="contactMe.html" class="learn-more">Learn more »</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box">
-                        <i class="fa fa-bar-chart icon"></i>
-                        <h3 class="name">SEO/Performane Optimization</h3>
-                        <p class="description">SEO is an important part of every website in order to get ranked high in Google searches. It is done using tags within the HTML code, which I write.</p>
-                        <a href="contactMe.html" class="learn-more">Learn more »</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--My Projects-->
-    <div class="projects-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Recent Projects</h2>
-                <p class="text-monospace text-center" style="font-family:ABeeZee, sans-serif;padding:0 0 10px 0;">Here are some of my past projects:</p>
-            </div>
-            <div class="row projects">
-                <div class="col-sm-6 col-lg-4 item">
-                    <img class="img-fluid" src="assets/img/bis.png" onclick="open(URL)">
-                    <h3 class="name">Broadview Immigration Services</h3>
-                    <p class="description">The complete website for a Toronto based immigration consultancy company. Created using the WIX Development Platform. I also did the SEO and site performance optimization.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item">
-                    <img class="img-fluid" src="assets/img/nyc.png">
-                    <h3 class="name">NYC Listing Agency</h3>
-                    <p class="description">I designed and developed a mock NYC based listing agency. Created using HTML, CSS, JavaScript and Photoshop.</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 item">
-                    <img class="img-fluid" src="assets/img/wt.png">
-                    <h3 class="name">
-                        <strong>WolfTech Computers</strong>
-                        <br>
-                    </h3>
-                    <p class="description">A mock gaming computer seller website, created using HTML, CSS and some Bootstrap elements</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--Skillset Percentage Card-->
-    <div class="skills portfolio-info-card" style="width:863px;margin:10px auto;">
-        <h2>My Current Skillset:</h2>
-        <h3>HTML</h3>
-        <div class="progress">
-            <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                <span class="sr-only">100%</span>
-            </div>
-        </div>
-        <h3>CSS</h3>
-        <div class="progress">
-            <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                <span class="sr-only">90%</span>
-            </div>
-        </div>
-        <h3>Bootstrap Studio</h3>
-        <div class="progress">
-            <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                <span class="sr-only">80%</span>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!--Footer-->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="links">
-                <a href="aboutMe.html">About me</a>
-                <a href="contactMe.html">Contact me</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/swapnil233">
-                    <i class="icon ion-social-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/md-hasan-sahria-i-7607a9111/">
-                    <i class="icon ion-social-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/swapnil_iqbal/">
-                    <i class="icon ion-social-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <!--Scripts-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+        <h1>The Marathon Has Begun</h1>
+        <p><b>FitCo</b> is a revolutionary fitness app created with partnerships with Google and Amazon. tracks everything from blood
+            pressure to heart rate, without leaving your pocket.</p>
+            <a href="#" class="downloadBtn">Try For Free</a>
+        <img src="img/app.png" alt="iphoneX Frame" class="iphone">
+    </header>
 </body>
 
 </html>

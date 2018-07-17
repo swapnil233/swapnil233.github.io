@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*-----GLOBAL-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/*-----Nav-----*/
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 0.5px;
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.downloadNavBtn {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.downloadNavBtn:hover {
+    transition: 0.3s;
+    color: black;
+    border: 2px solid black;
+}
+
+/*-----Hero-----*/
+
+header {
+    background: url('../img/runner2.jpg');
+    /*linear-gradient(156deg, rgba(72, 105, 106, 0.45) 0%, rgba(81, 154, 100, .45) 52%, rgba(130, 118, 98, 1) 96%), url(../img/runner1.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 90%;
+    padding: 0 5%;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    width: 60%;
+    font-size: 90px;
+    margin: 90px 0 40px 0;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.downloadBtn {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 90px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.downloadBtn:hover {
+    color: black;
+    border: 3px solid black;
+    transition: .5s;
+}
+
+.iphone {
+    width: 20%;
+    /*change this value when smaller screen - mediaquery*/
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
