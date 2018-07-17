@@ -104,7 +104,7 @@ header p {
 .downloadBtn:hover {
     color: black;
     border: 3px solid black;
-    transition: .5s;
+    transition: .3s;
 }
 
 .iphone {
@@ -113,4 +113,88 @@ header p {
     position: absolute;
     right: 5%;
     bottom: 5%;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+/*-----iPad Pro:-----*/
+
+@media only screen and (max-device-width: 1024px) {
+    nav {
+        margin-top: 30px;
+    }
+    nav a {
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+        line-height: 100px;
+    }
+    .logo {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    header h1 {
+        font-size: 120px;
+        width: 60%;
+    }
+    header p {
+        width: 50%;
+        font-size: 30px;
+    }
+    .iphone {
+        width: 40%;
+    }
+    .downloadBtn {
+        font-size: 40px;
+    }
+}
+
+/*-----iPad-----*/
+
+@media only screen and (max-device-width: 768px) {
+    header h1 {
+        font-size: 110px;
+    }
+}
+
+/*-----iPhone X-----*/
+
+@media only screen and (max-device-width:375px) {
+    nav a {
+        font-size: 50px;
+    }
+    header h1 {
+        width: 20%;
+        font-size: 160px;
+    }
+    header p {
+        font-size: 40px;
+    }
+    .downloadBtn {
+        font-size: 50px;
+    }
+    .iphone {
+        width: 50%;
+        bottom: 60px;
+        right: 10px;
+    }
+}
+
+/*-----iPhone 6/7/8 Plus-----*/
+
+@media only screen and (max-device-width:414px) {
+    header h1 {
+        font-size: 100px;
+        width: 20%;
+    }
+
+    header p {
+        width: 45%;
+    }
+
+    .iphone {
+        width: 55%;
+    }
 }
