@@ -48,7 +48,6 @@ nav ul li {
 
 .downloadNavBtn {
     padding: 5px 10px;
-    border: 2px solid white;
     border-radius: 30px;
 }
 
@@ -62,7 +61,6 @@ nav ul li {
 
 header {
     background: url('../img/runner2.jpg');
-    /*linear-gradient(156deg, rgba(72, 105, 106, 0.45) 0%, rgba(81, 154, 100, .45) 52%, rgba(130, 118, 98, 1) 96%), url(../img/runner1.jpg);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,8 +93,7 @@ header p {
     font-weight: 500;
     font-size: 25px;
     color: white;
-    border: 2px solid white;
-    border-radius: 90px;
+    border: 1px solid white;
     padding: 10px 15px;
     text-transform: uppercase;
 }
@@ -115,50 +112,173 @@ header p {
     bottom: 5%;
 }
 
-/*-----MEDIA QUERIES-----*/
-
-/*-----iPad-----*/
-
-@media (min-width: 768px) {
-    nav a {
-        font-size: 30px;
-    }
-    header h1 {
-        font-size: 85px;
-    }
-    header p {
-        width: 40%;
-        font-size: 35px;
-    }
-    .downloadBtn {
-        font-size: 30px;
-    }
-    .iphone {
-        width: 40%;
-    }
+.mobile {
+    display: none;
 }
 
-/*-----iPad Pro:-----*/
+label {
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
 
-@media (min-width: 1024px) {
-    nav a {
-        font-size: 30px;
-    }
-    .logo {
-        font-size: 40px;
-    }
+#toggle {
+    display: none;
+}
+
+.mobile ul {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+}
+
+.mobile ul li {
+    margin: 0;
+    width: 100%;
+}
+
+#toggle:checked~ul {
+    display: block;
+}
+
+/*-----MEDIA QUERIES-----*/
+
+@media only screen and (max-width: 1200px) {
     header h1 {
-        font-size: 120px;
-        width: 60%;
+        width: 70%;
+    }
+    .iphone {
+        width: 27%;
     }
     header p {
         width: 50%;
+        letter-spacing: 0.5px;
+    }
+}
+
+/*ipad pro*/
+
+@media only screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    nav a {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    label {
+        font-size: 60px;
+    }
+    .mobile {
+        display: block;
+    }
+    header h1 {
+        width: 60%;
+        font-size: 100px;
+    }
+    .iphone {
+        width: 37%;
+    }
+    header p {
+        width: 50%;
+        letter-spacing: 0.5px;
         font-size: 30px;
     }
     .downloadBtn {
         font-size: 35px;
     }
+}
+
+/*ipad*/
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    nav a {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    label {
+        font-size: 60px;
+    }
+    .mobile {
+        display: block;
+    }
+    header h1 {
+        width: 70%;
+        font-size: 60px;
+    }
     .iphone {
         width: 40%;
+    }
+    header p {
+        width: 50%;
+        letter-spacing: 0.5px;
+        font-size: 25px;
+    }
+    .downloadBtn {
+        font-size: 35px;
+    }
+}
+
+/*iphone 6/7/8 plus*/
+
+@media only screen and (max-width: 414px) {
+    .logo {
+        display: none;
+    }
+    label {
+        font-size: 30px;
+    }
+    header h1 {
+        font-size: 45px;
+        width: 100%;
+    }
+    header p {
+        font-size: 20px;
+        width: 90%;
+    }
+    .downloadBtn {
+        font-size: 20px;
+    }
+    .iphone {
+        display: none;
+    }
+}
+
+/*iphone x*/
+
+@media only screen and (max-width: 375px) {
+    .logo {
+        display: none;
+    }
+    label {
+        font-size: 30px;
+    }
+    header h1 {
+        font-size: 50px;
+        width: 100%;
+    }
+    header p {
+        font-size: 20px;
+        width: 90%;
+    }
+    .downloadBtn {
+        font-size: 20px;
+    }
+    .iphone {
+        display: none;
     }
 }
