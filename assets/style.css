@@ -117,77 +117,35 @@ header p {
 
 /*-----MEDIA QUERIES-----*/
 
-/*-----iPhone X-----*/
-
-@media(max-width:375px) {
-    nav a {
-        font-size: 50px;
-    }
-    header h1 {
-        width: 20%;
-        font-size: 160px;
-    }
-    header p {
-        font-size: 40px;
-    }
-    .downloadBtn {
-        font-size: 50px;
-    }
-    .iphone {
-        width: 50%;
-        bottom: 60px;
-        right: 10px;
-    }
-}
-
-/*-----iPhone 6/7/8 Plus-----*/
-
-@media(max-width:414px) {
-    header h1 {
-        font-size: 100px;
-        width: 20%;
-    }
-    header p {
-        width: 45%;
-        font-size: 40px;
-    }
-    .iphone {
-        width: 55%;
-        bottom: 60px;
-        right: 10px;
-    }
-}
-
 /*-----iPad-----*/
 
-@media(max-width: 768px) {
+@media (min-width: 768px) {
+    nav a {
+        font-size: 30px;
+    }
     header h1 {
         font-size: 85px;
     }
-
     header p {
-        width:40%;
+        width: 40%;
+        font-size: 35px;
+    }
+    .downloadBtn {
         font-size: 30px;
+    }
+    .iphone {
+        width: 40%;
     }
 }
 
 /*-----iPad Pro:-----*/
 
-@media (max-width: 1024px) {
-    nav {
-        margin-top: 30px;
-    }
+@media (min-width: 1024px) {
     nav a {
-        font-size: 40px;
-        color: white;
-        text-decoration: none;
-        line-height: 100px;
+        font-size: 30px;
     }
     .logo {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 500;
         font-size: 40px;
-        letter-spacing: 2px;
     }
     header h1 {
         font-size: 120px;
@@ -197,10 +155,10 @@ header p {
         width: 50%;
         font-size: 30px;
     }
+    .downloadBtn {
+        font-size: 35px;
+    }
     .iphone {
         width: 40%;
-    }
-    .downloadBtn {
-        font-size: 40px;
     }
 }
