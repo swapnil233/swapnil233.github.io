@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    background-color: #000000;
+}
+
+/*----- Hero Banner -----*/
+
+header {
+    background-image: url(img/hero2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    color: #fcf7ff;
+    font-size: 120px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 0 0 30px;
+}
+
+header a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cccbcb;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 0 0 30px;
+    width: 350px;
+    text-transform: uppercase;
+}
+
+/*----- Listings -----*/
+
+.listings {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.listings h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #f0f8ff;
+    font-size: 50px;
+    letter-spacing: 1px;
+    max-width: 100%;
+    text-align: center;
+    margin: 60px auto 30px auto;
+    padding: 10px
+}
+
+.listings img {
+    max-width: 90%;
+    padding: 2%
+}
+
+/*----- Why Us -----*/
+
+.whyUs {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.whyUs h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #f0f8ff;
+    font-size: 50px;
+    letter-spacing: 1px;
+    max-width: 100%;
+    text-align: center;
+    margin: 60px auto 30px auto;
+    padding: 10px
+}
+
+.whyUs p {
+    font-family: 'Fjalla One', sans-serif;
+    color: #f0f8ff;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.agents {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.agent-one,
+.agent-two,
+.agent-three {
+    display: flex;
+    margin: 10px 0 30px 0;
+}
+
+.agents img {
+    margin: 10px;
+}
+
+.agents h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #f0f8ff;
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 40px;
+}
+
+.agents p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: #f0f8ff;
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 40px;
+    line-height: 30px;
+}
+
+footer {
+    width: 90%;
+    padding: 1%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+    color: #a59f9f;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    color: #a59f9f;
+}
+
+footer p {
+    margin: 10px 10px 5px 10px;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
