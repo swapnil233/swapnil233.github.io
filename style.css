@@ -43,21 +43,20 @@ header a {
     text-decoration: none;
     margin: 0 0 0 30px;
     width: 350px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 /*----- Listings -----*/
 
 .listings {
-    max-width: 90%;
     margin: 0 auto;
-    text-align: center
+    text-align: center;
 }
 
 .listings h2 {
     font-family: 'Fjalla One', sans-serif;
     color: #f0f8ff;
-    font-size: 50px;
+    font-size: 2.5rem;
     letter-spacing: 1px;
     max-width: 100%;
     text-align: center;
@@ -65,9 +64,18 @@ header a {
     padding: 10px
 }
 
+.listings p {
+    font-family: 'Fjalla One', sans-serif;
+    color: #f0f8ff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    max-width: 100%;
+    text-align: center;
+}
+
 .listings img {
-    max-width: 90%;
-    padding: 2%
+    width: 80%;
+    padding: 2%;
 }
 
 /*----- Why Us -----*/
