@@ -8,6 +8,7 @@
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
+    color: white;
 }
 
 body {
@@ -79,12 +80,10 @@ body {
     .hero-wrapper h1 {
         font-size: 60px;
     }
-
     .hero-wrapper h2 {
         margin-top: 10px;
         font-size: 20px;
     }
-
     .down-arrow {
         width: 10%;
     }
@@ -93,6 +92,159 @@ body {
 /* ---------- About Section ---------- */
 
 .about {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.left,
+.right {
+    padding: 2% 3%;
+}
+
+.left {
+    text-align: center;
+}
+
+.left img {
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.left h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+
+.left a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: 2px solid #fd8469;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.right h1 {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+/* about section above 900px */
+
+@media (min-width:900px) {
+    .about {
+        display: flex;
+    }
+    .left,
+    .right {
+        flex: 1;
+    }
+}
+
+/* about section under 400px */
+
+@media (max-width:400px) {
+    .left img {
+        width: 120px;
+    }
+    .left h2 {
+        font-size: 20px;
+        width: 90%;
+        letter-spacing: normal;
+    }
+    .left a {
+        font-size: 1.2rem;
+    }
+
+    .right h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* test css */
+
+/* Style inputs, select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+
+input[type=submit] {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }

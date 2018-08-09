@@ -40,7 +40,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 
-    <!-- JQuery CDN -->
+    <!-- JQuery Version 3.3.1 CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
@@ -65,7 +65,49 @@
 
     <!-- About Section -->
     <div class="about" id="about">
-        <h1>sdkfsadfn</h1>
+        <div class="left">
+            <img src="/assets/img/boy.svg" alt="Profile Picture">
+            <h2>I am a first year Mechanical Engineering student studying at the University of Toronto. In my free time, I learn
+                to code, and make websites &amp; web projects. I am profecient in HTML, CSS and JavaScript</h2>
+            <a href="#">Resume</a>
+        </div>
+
+        <div class="right">
+            <h1>Contact Me</h1>
+
+            <!-- test -->
+            <div class="container">
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>
