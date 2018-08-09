@@ -31,6 +31,12 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Adaptive Images Script -->
+    <script>
+        document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + ("devicePixelRatio" in window ? "," +
+            devicePixelRatio : ",1") + '; path=/';
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 
