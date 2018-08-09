@@ -154,6 +154,12 @@ body {
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.left a:hover {
+    color: black;
+    background-color: white;
 }
 
 .right {
@@ -240,7 +246,6 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
-    color: white;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -269,6 +274,12 @@ input[type=submit] {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    transition: 0.5s ease;
+}
+
+input[type=submit]:hover {
+    color:black;
+    background-color: white;
 }
 
 /* Style the container */
@@ -300,6 +311,7 @@ input[type=submit] {
 
 .social {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .social-links {
@@ -335,3 +347,5 @@ input[type=submit] {
         margin: 10px 2px;
     }
 }
+
+/* Projects Section */
