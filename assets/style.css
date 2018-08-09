@@ -76,6 +76,23 @@ body {
 
 /* Landing Section Media Queries */
 
+/* 600px and under */
+@media (max-width:600px) {
+    .hero-wrapper h1 {
+        font-size: 55px;
+    }
+
+    .hero-wrapper h2 {
+        font-size: 20px;
+    }
+
+    .down-arrow {
+        width: 8%;
+    }
+}
+
+
+/* Devices width under 400 px (phones) */
 @media only screen and (max-width:400px) {
     .hero-wrapper h1 {
         font-size: 60px;
@@ -92,13 +109,11 @@ body {
 /* ---------- About Section ---------- */
 
 .about {
-    width: 100%;
     overflow: hidden;
 }
 
 .left,
 .right {
-    /* top & botom, left & right */
     padding: 2% 3%;
 }
 
@@ -133,7 +148,6 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-
     background-color: #0d0d0d;
     color: white;
     padding: 12px 40px;
@@ -173,6 +187,18 @@ body {
     }
 }
 
+/* under 600px */
+@media (max-width:600px) {
+    .left h2 {
+        font-size: 20px;
+    }
+
+    .left a {
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+}
+
 /* about section under 400px */
 
 @media (max-width:400px) {
@@ -192,7 +218,7 @@ body {
         padding: 5px;
     }
     .right img {
-        margin-top: 100px;
+        margin-top: 60px;
         width: 100px;
     }
     .right h1 {
@@ -217,8 +243,7 @@ textarea {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Roboto',
-    sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
 
@@ -242,8 +267,7 @@ input[type=submit] {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Roboto',
-    sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
 
@@ -269,5 +293,45 @@ input[type=submit] {
     input[type=submit] {
         width: 100%;
         margin-top: 10px;
+    }
+}
+
+/* Social Links Section */
+
+.social {
+    display: flex;
+}
+
+.social-links {
+    border-top: 1px solid white;
+    border-bottom: 1px solid darkgray;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.social img {
+    display: inline-block;
+    width: 90px;
+    margin: 30px 100px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+/* 600px and under */
+@media (max-width:600px) {
+    .social img {
+        width: 50px;
+        margin: 10px 10px;
+    }
+}
+
+/* 400px and under */
+@media (max-width:400px) {
+    .social img {
+        width: 40px;
+        margin: 10px 2px;
     }
 }
