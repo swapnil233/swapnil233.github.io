@@ -352,3 +352,25 @@ input[type=submit]:hover {
 }
 
 /* Projects Section */
+
+.projects {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bis,
+.ny,
+.fit,
+.tictactoe,
+.blackjack,
+.gamingcomputer,
+.learningJS {
+    flex: 1;
+}
+
+.bis, .ny {
+    flex: 2;
+}
