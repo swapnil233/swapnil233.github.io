@@ -200,7 +200,7 @@ body {
     }
     .left a {
         font-size: 20px;
-        padding: 10px 10px;
+        padding: 5px 10px;
     }
 }
 
@@ -249,6 +249,7 @@ textarea {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    /* fixed the "cant see form text bug": */
     color: black;
 }
 
@@ -332,7 +333,7 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 
-/* 600px and under */
+/* Social links 600px and under */
 
 @media (max-width:600px) {
     .social img {
@@ -341,7 +342,7 @@ input[type=submit]:hover {
     }
 }
 
-/* 400px and under */
+/* Social links 400px and under */
 
 @media (max-width:400px) {
     .social img {
