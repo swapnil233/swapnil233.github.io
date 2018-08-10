@@ -249,6 +249,7 @@ textarea {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    color: black;
 }
 
 /* Style the label to display next to the inputs */
@@ -350,8 +351,3 @@ input[type=submit]:hover {
 }
 
 /* Projects Section */
-.projects-section {
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-}
