@@ -154,6 +154,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: 0.5s;
+    display: inline-block;
 }
 
 .left a:hover {
@@ -354,8 +355,111 @@ input[type=submit]:hover {
 /* ---------- Projects Section ---------- */
 
 .projects-section {
-    height: 100vh;
     width: 90%;
     margin: 0 auto;
     text-align: center;
+}
+
+.projects-section-title {
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    padding: 30px;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 0 auto 10px auto;
+    width: 90px;
+}
+
+.wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.project {
+    width: 300px;
+    height: 300px;
+    background-image: url('/assets/img/p1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 20px 20px 0 20px;
+}
+
+.project:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    background-image: url('/assets/img/p2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.project:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    background-image: url('/assets/img/p3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.project a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto',
+    sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.go-to-github {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto',
+    sans-serif;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+/* Go to github btn needs to have margin bottom under 400px */
+@media (max-width:400px) {
+    .go-to-github {
+        margin-bottom: 50px;
+    }
+}
+
+.go-to-github:hover{
+    color: black;
+    background-color: white;
 }
