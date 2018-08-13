@@ -37,6 +37,7 @@ function submitForm(e) {
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
+    //Variable to determine if all fields filled in
     var validated = false;
 
     //If fields aren't empty, save and send the message
@@ -45,53 +46,18 @@ function submitForm(e) {
         saveMessage(name, email, message);
     } else {
         validated === false;
-        alert("All 3 fields are required.")
+        alert("All 3 fields are required. Your message will NOT send")
     }
 
     //Clear the fields after submitting:
     document.getElementById('contactForm').reset();
 
     //Display success message, then erase after 10 seconds:
-    if (validated === true) {
-        document.querySelector(".message-sent").style.display = "block";
-        setTimeout(function () {
-            document.querySelector(".message-sent").style.display = "none";
-        }, 3000);
-    }
+    document.getElementsByClassName('message-sent')[0].style.display = "block";
+    setTimeout(function () {
+        document.getElementsByClassName('message-sent')[0].style.display = "none";
+    }, 3000);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Smooth scroll code made using JQuery:
 $(document).ready(function () {
