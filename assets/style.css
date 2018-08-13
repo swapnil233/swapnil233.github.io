@@ -303,6 +303,20 @@ hr {
     display: none;
 }
 
+.message-not-sent {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #dc3545;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
 .right img {
     margin-bottom: 30px;
     width: 150px;
