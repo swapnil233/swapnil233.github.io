@@ -9,13 +9,13 @@ var config = {
 };
 firebase.initializeApp(config);
 
-// Implementing firebase backend 
+// Implementing firebase backend:
 
 //Reference messages collection:
 var messagesRef = firebase.database().ref('messages');
 
 //Save messages to firebase:
-//MessagesRef is like a table. All I am doing is pushing the data to the table
+//messagesRef is like a table/array. All I am doing is pushing the data to the table
 function saveMessage(name, email, message) {
     var newMessagesRef = messagesRef.push();
     newMessagesRef.set({
@@ -25,12 +25,10 @@ function saveMessage(name, email, message) {
     });
 };
 
-var validated = false;
-
 // Runs submission to firebase function:
-    document.getElementById('submit').addEventListener('click', submitForm);
+document.getElementById('submit').addEventListener('click', submitForm);
 
-//Submit the form:
+//-- MAIN -- Submit the form:
 function submitForm(e) {
     e.preventDefault();
 
@@ -39,17 +37,35 @@ function submitForm(e) {
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
-    //Saving the message
-    saveMessage(name, email, message);
+    //Variable to determine if all fields filled in
+    var validated = false;
 
-    //Clear the fields after submitting:
-    document.getElementById('contactForm').reset();
+    //If fields aren't empty, save and send the message
+    if (name !== "" && email !== "" && message !== "") {
+        validated === true;
 
-    //Display success message, then erase after 10 seconds:
-    document.querySelector(".message-sent").style.display = "block";
-    setTimeout(function () {
-        document.querySelector(".message-sent").style.display = "none";
-    }, 3000);
+        //Submit the msg
+        saveMessage(name, email, message);
+
+        //Display success msg, then erase after 10 seconds:
+        document.getElementsByClassName('message-sent')[0].style.display = "block";
+        setTimeout(function () {
+            document.getElementsByClassName('message-sent')[0].style.display = "none";
+        }, 3000);
+
+        //Clear the fields after submitting:
+        document.getElementById('contactForm').reset();
+    } 
+    
+    //If fields ARE empty, send error message
+    else {
+        validated === false;
+        //Display not-sent message, then erase after 10 seconds:
+        document.getElementsByClassName('message-not-sent')[0].style.display = "block";
+        setTimeout(function () {
+            document.getElementsByClassName('message-not-sent')[0].style.display = "none";
+        }, 3000);
+    }
 };
 
 // Smooth scroll code made using JQuery:
