@@ -45,16 +45,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css">
 
-    <!-- JavaScript -->
-    <script src="assets/script.js"></script>
-
 </head>
-
-<!-- 
-    Ideas:
-    - JavaScript Smooth Scrolling
-    - CSS card flipping animation for projects section
- -->
 
 <body>
     <!-- Hero Banner Section -->
@@ -120,33 +111,41 @@
 
             <!-- Form -->
             <div class="container">
-                <form action="action_page.php">
-                    <!-- Full Name -->
+                <form id="contactForm">
+                    <!-- Name -->
                     <div class="row">
                         <div class="col-75">
-                            <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                            <input type="text" id="name" name="fullname" placeholder="Full Name" required>
                         </div>
                     </div>
 
                     <!-- Email -->
                     <div class="row">
                         <div class="col-75">
-                            <input type="email" id="email" name="email" placeholder="Email Address">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
                         </div>
                     </div>
 
                     <!-- Message -->
                     <div class="row">
                         <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Message" style="height:100px"></textarea>
+                            <textarea id="message" name="subject" placeholder="Message" style="height:100px" required></textarea>
                         </div>
                     </div>
 
                     <!-- Submit Button -->
+
+                    <!-- had to change the button type to buttn from submit on 08/13/2018 might cause problems -->
                     <div class="row">
-                        <input type="submit" value="Submit">
+                        <button type="button" id="submit">Send</button>
                     </div>
                 </form>
+
+                <!-- Appears when user clicks send -->
+                <div class="message-sent">
+                    Your message has been sent.
+                </div>
+
             </div>
         </div>
     </div>
@@ -172,6 +171,11 @@
         </div>
     </div>
 
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
