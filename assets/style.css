@@ -16,6 +16,7 @@ body {
 }
 
 /* ---------- Hero Banner Section ---------- */
+
 .hero {
     background-image: url('/assets/img/hero-banner-darkened-min.jpg ');
     background-repeat: no-repeat;
@@ -62,6 +63,7 @@ body {
 }
 
 /* Down Arrow up-down Animation */
+
 @keyframes up-down-animation {
     0%,
     100% {
@@ -73,13 +75,15 @@ body {
 }
 
 /* Landing section under 800px */
-@media (max-width:800px){
+
+@media (max-width:800px) {
     .down-arrow {
         width: 7%;
     }
 }
 
 /* Landing section 600px and under */
+
 @media (max-width:600px) {
     .hero-wrapper h1 {
         font-size: 55px;
@@ -93,6 +97,7 @@ body {
 }
 
 /* Landing section under 400px */
+
 @media only screen and (max-width:400px) {
     .hero-wrapper h1 {
         font-size: 60px;
@@ -228,6 +233,7 @@ hr {
 }
 
 /* ---------- About Section ---------- */
+
 .about {
     overflow: hidden;
 }
@@ -288,7 +294,7 @@ hr {
     text-align: center;
 }
 
-.message-sent{
+.message-sent {
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -296,8 +302,7 @@ hr {
     line-height: 50px;
     background-color: #28a745;
     font-weight: bolder;
-    font-family: 'Roboto',
-    sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 20px;
     display: none;
@@ -332,6 +337,7 @@ hr {
 }
 
 /* About section above 900px */
+
 @media (min-width:900px) {
     /* Enabling flexbox property */
     .about {
@@ -344,22 +350,24 @@ hr {
 }
 
 /* under 800px */
-@media (max-width:800px){
+
+@media (max-width:800px) {
     .left h1 {
         font-size: 60px;
     }
-   .left h2 {
-       font-size: 30px;
-   }
-   .left a {
-       font-size: 30px;
-       padding: 10px 10px;
-       width: 80%;
-       margin-top: 10px;
-   }
+    .left h2 {
+        font-size: 30px;
+    }
+    .left a {
+        font-size: 30px;
+        padding: 10px 10px;
+        width: 80%;
+        margin-top: 10px;
+    }
 }
 
 /* About section under 600px */
+
 @media (max-width:600px) {
     .left h2 {
         font-size: 20px;
@@ -373,6 +381,7 @@ hr {
 }
 
 /* About section under 400px */
+
 @media (max-width:400px) {
     .left img {
         width: 120px;
@@ -401,6 +410,7 @@ hr {
 /* ---------- Form CSS ---------- */
 
 /* Style inputs, select elements and textareas */
+
 input[type=text],
 input[type=email],
 select,
@@ -425,6 +435,7 @@ button {
 }
 
 /* Style the label to display next to the inputs */
+
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -478,7 +489,112 @@ button[type=button]:hover {
     }
 }
 
-/* Social Links Section */
+/* ---------- Water Cup ---------- */
+
+.skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-wrapper h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mySkillsTitle{
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 30px 30px 20px 30px;
+}
+
+.skill {
+    z-index: 100;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    margin: 50px 10px;
+    background: #fff;
+    border-radius: 0 0 35% 35%;
+}
+
+.skill #html-skill {
+    z-index: -1;
+}
+
+/* progress bar for HTML */
+
+#html-skill::before {
+    content: '';
+    position: absolute;
+    background: #04ACFF;
+    width: 100%;
+    bottom: 0;
+    animation: html-animation 5s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+@keyframes html-animation {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 95%;
+    }
+}
+
+/* progress bar for CSS */
+
+#css-skill::before {
+    content: '';
+    position: absolute;
+    background: #04ACFF;
+    width: 100%;
+    bottom: 0;
+    animation: css-animation 3s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+@keyframes css-animation {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 80%;
+    }
+}
+
+/* progress bar for JS */
+
+#js-skill::before {
+    content: '';
+    position: absolute;
+    background: #04ACFF;
+    width: 100%;
+    bottom: 0;
+    animation: js-animation 3s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+@keyframes js-animation {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
+/* ---------- Social Links Section ---------- */
 
 .social {
     display: flex;
@@ -505,7 +621,7 @@ button[type=button]:hover {
 
 /* Social links 600px and under */
 
-@media (max-width:800px){
+@media (max-width:800px) {
     .social img {
         width: 50px;
         margin: 10px 20px;
