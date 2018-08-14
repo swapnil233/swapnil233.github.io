@@ -51,6 +51,8 @@ body {
     color: rgba(255, 255, 255, 0.7);
     font-size: 40px;
     margin-top: 5px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .down-arrow {
@@ -59,19 +61,6 @@ body {
     bottom: 5%;
     transform: translate(-50%, 0);
     width: 4%;
-    animation: up-down-animation 2s linear infinite;
-}
-
-/* Down Arrow up-down Animation */
-
-@keyframes up-down-animation {
-    0%,
-    100% {
-        bottom: 5%;
-    }
-    50% {
-        bottom: 10px;
-    }
 }
 
 /* Landing section under 800px */
@@ -542,7 +531,7 @@ button[type=button]:hover {
     background: #04ACFF;
     width: 100%;
     bottom: 0;
-    animation: html-animation 5s cubic-bezier(.2, .6, .8, .4) forwards;
+    animation: html-animation 3s cubic-bezier(.2, .6, .8, .4) forwards;
 }
 
 @keyframes html-animation {
@@ -643,3 +632,5 @@ button[type=button]:hover {
         margin: 10px 2px;
     }
 }
+
+/* test area */
