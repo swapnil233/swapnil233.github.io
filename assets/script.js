@@ -49,7 +49,7 @@ function submitForm(e) {
 
         //Display success msg, then erase after 10 seconds:
         document.getElementsByClassName('message-sent')[0].style.display = "block";
-        setTimeout(function () {
+        setTimeout(() => {
             document.getElementsByClassName('message-sent')[0].style.display = "none";
         }, 3000);
 
@@ -62,7 +62,7 @@ function submitForm(e) {
         validated === false;
         //Display not-sent message, then erase after 10 seconds:
         document.getElementsByClassName('message-not-sent')[0].style.display = "block";
-        setTimeout(function () {
+        setTimeout(() => {
             document.getElementsByClassName('message-not-sent')[0].style.display = "none";
         }, 3000);
     }
@@ -95,6 +95,5 @@ $(document).ready(function () {
             }
         })
 
-    });
-    // End of smooth scroll
+    }); // End of smooth scroll
 });
