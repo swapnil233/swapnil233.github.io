@@ -283,6 +283,23 @@ hr {
     text-align: center;
 }
 
+.going {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.going h1 {
+    font: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+}
+
 .message-sent {
     margin: 0 auto;
     width: 80%;
@@ -504,10 +521,15 @@ button[type=button]:hover {
     margin: 0 auto;
 }
 
-.social img {
+.social img{
     display: inline-block;
     width: 50px;
     margin: 10px 30px;
+    transition: 0.3s;
+}
+
+.social img:hover {
+    opacity: 0.5;
 }
 
 .social a {
