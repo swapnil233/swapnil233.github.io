@@ -55,8 +55,8 @@ function submitForm(e) {
 
         //Clear the fields after submitting:
         document.getElementById('contactForm').reset();
-    } 
-    
+    }
+
     //If fields ARE empty, send error message
     else {
         validated === false;
