@@ -55,7 +55,7 @@ body {
     margin: 0 auto;
 }
 
-.down-arrow {
+.scroll .down-arrow {
     text-align: center;
     position: absolute;
     bottom: 5%;
@@ -66,7 +66,7 @@ body {
 /* Landing section under 800px */
 
 @media (max-width:800px) {
-    .down-arrow {
+    .scroll .down-arrow {
         width: 7%;
     }
 }
@@ -80,7 +80,7 @@ body {
     .hero-wrapper h2 {
         font-size: 20px;
     }
-    .down-arrow {
+    .scroll .down-arrow {
         width: 8%;
     }
 }
@@ -101,9 +101,7 @@ body {
 }
 
 /* ---------- Projects Section ---------- */
-
-/* new */
-
+/* re-done on august 8, 2018 to allow link-click on entire box */
 .projects-section {
     width: 90%;
     margin: 0 auto;
@@ -140,6 +138,12 @@ hr {
     background-size: cover;
     border-radius: 20px;
     margin: 20px 20px 0 20px;
+    /* the text */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
 }
 
 .project:nth-child(2) {
@@ -150,6 +154,12 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
+    /* the text */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
 }
 
 .project:nth-child(3) {
@@ -160,15 +170,12 @@ hr {
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-}
-
-a {
+    /* the text */
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 30px;
-    padding: 0 10px;
 }
 
 .project .overlay {
@@ -548,6 +555,7 @@ button[type=button]:hover {
 }
 
 /* test area */
+
 .hover-on a {
     width: 300px;
     height: 300px;
