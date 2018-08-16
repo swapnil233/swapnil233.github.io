@@ -596,7 +596,7 @@ button[type=button]:hover {
     border-radius: 10px;
     display: none;
 }
-
+/* Mobile footer <500px */
 @media (max-width: 500px) {
     .footer-section {
         padding: 10px 10px 30px 10px;
