@@ -8,7 +8,7 @@
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    color: white;
+    color: #FFFFFF;
 }
 
 body {
@@ -45,7 +45,7 @@ body {
 .hero-wrapper h1 {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    color: white;
+    color: #FFFFFF;
     font-size: 100px;
 }
 
@@ -79,7 +79,7 @@ body {
 
 /* Social links 800px and under */
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .social img {
         width: 50px;
         margin: 10px 20px;
@@ -88,7 +88,7 @@ body {
 
 /* Social links 600px and under */
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .social img {
         width: 50px;
         margin: 10px 10px;
@@ -97,7 +97,7 @@ body {
 
 /* Social links 400px and under */
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .social img {
         width: 40px;
         margin: 10px 10px;
@@ -130,7 +130,7 @@ body {
 
 /* Landing section under 800px */
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .scroll .down-arrow {
         width: 7%;
     }
@@ -138,7 +138,7 @@ body {
 
 /* Landing section 600px and under */
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .hero-wrapper h1 {
         font-size: 55px;
     }
@@ -152,7 +152,7 @@ body {
 
 /* Landing section under 400px */
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width: 400px) {
     .hero-wrapper h1 {
         font-size: 60px;
     }
@@ -176,7 +176,7 @@ body {
 }
 
 .projects-section-title {
-    font-weight: bolder;
+    font-weight: 700er;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
@@ -207,9 +207,9 @@ hr {
     margin: 20px 20px 0 20px;
     /* the text */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #FFFFFF;
     font-size: 30px;
 }
 
@@ -238,9 +238,9 @@ hr {
 
 .go-to-github {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #FFFFFF;
     font-size: 20px;
     border: 1px solid white;
     border-radius: 5px;
@@ -250,25 +250,25 @@ hr {
 }
 
 .go-to-github:hover {
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 /* Go to github btn needs to have margin bottom under 400px */
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .go-to-github {
         margin-bottom: 50px;
     }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .overlay {
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .project {
         flex: 0 0 90%;
     }
@@ -298,7 +298,7 @@ hr {
 
 .left h1 {
     font-family: 'Roboto Condensed', sans-serif;
-    color: white;
+    color: #FFFFFF;
     font-size: 40px;
     width: 80%;
     margin: 0 auto 30px auto;
@@ -307,7 +307,7 @@ hr {
 .left h2 {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
-    color: white;
+    color: #FFFFFF;
     font-size: 25px;
     width: 80%;
     margin: 0 auto 30px auto;
@@ -315,10 +315,10 @@ hr {
 
 .left a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     background-color: #0d0d0d;
-    color: white;
+    color: #FFFFFF;
     padding: 12px 40px;
     border: 1px solid white;
     border-radius: 4px;
@@ -329,8 +329,8 @@ hr {
 }
 
 .left a:hover {
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 .right {
@@ -345,9 +345,9 @@ hr {
 
 .right h1 {
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 700er;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
@@ -359,7 +359,7 @@ hr {
     height: 50px;
     line-height: 50px;
     background-color: #28a745;
-    font-weight: bolder;
+    font-weight: 700er;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 20px;
@@ -374,7 +374,7 @@ hr {
     height: 50px;
     line-height: 50px;
     background-color: #dc3545;
-    font-weight: bolder;
+    font-weight: 700er;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 20px;
@@ -384,7 +384,7 @@ hr {
 
 /* Message sent and not sent under 600px */
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .message-sent,
     .message-not-sent {
         width: 100%;
@@ -393,7 +393,7 @@ hr {
 
 /* About section above 900px */
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
     /* Enabling flexbox property */
     .about {
         display: flex;
@@ -406,7 +406,7 @@ hr {
 
 /* About section under 800px */
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
     .left h1 {
         font-size: 60px;
     }
@@ -423,7 +423,7 @@ hr {
 
 /* About section under 600px */
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .left h2 {
         font-size: 20px;
     }
@@ -437,7 +437,7 @@ hr {
 
 /* About section under 400px */
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .left img {
         width: 120px;
     }
@@ -478,7 +478,7 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     /* fixed the "cant see form text bug": */
@@ -500,23 +500,23 @@ label {
 
 button[type=button] {
     background-color: #0d0d0d;
-    color: white;
+    color: #FFFFFF;
     padding: 12px 20px;
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
     width: 80%;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     transition: 0.5s ease;
 }
 
 button[type=button]:hover {
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 /* Style the container */
@@ -554,10 +554,10 @@ button[type=button]:hover {
 }
 
 .footer {
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
 }
 
@@ -565,7 +565,7 @@ button[type=button]:hover {
     text-decoration: none;
     padding: 10px;
     border: 1px solid white;
-    color: white;
+    color: #FFFFFF;
     height: 100%;
     width: 150px;
     margin: 10px auto;
