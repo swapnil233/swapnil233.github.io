@@ -15,6 +15,10 @@ body {
     background-color: #0d0d0d;
 }
 
+.hide {
+    display: none;
+}
+
 /* ---------- Hero Banner Section ---------- */
 
 .hero {
@@ -250,6 +254,7 @@ hr {
 .left img {
     margin-bottom: 30px;
     width: 150px;
+    border-radius: 50%;
 }
 
 .left h1 {
@@ -294,8 +299,9 @@ hr {
 }
 
 .right img {
-    margin-bottom: 30px;
     width: 150px;
+    margin-bottom: 30px;
+    border-radius: 50%;
 }
 
 .right h1 {
