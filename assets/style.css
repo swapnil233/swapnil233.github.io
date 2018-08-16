@@ -105,20 +105,22 @@ body {
 .scroll .down-arrow {
     text-align: center;
     position: absolute;
-    bottom: 5%;
     transform: translate(-50%, 0);
-    width: 4%;
+    width: 3%;
+    margin-bottom: 10px;
 }
 
 .down-arrow {
     animation: down 2s infinite;
 }
+
 /* up down animation */
+
 @keyframes down {
-    0%, 100% {
+    0%,
+    100% {
         bottom: 0;
     }
-
     50% {
         bottom: 20px;
     }
@@ -162,7 +164,9 @@ body {
 }
 
 /* ---------- Projects Section ---------- */
+
 /* re-done on august 8, 2018 to allow link-click on entire box */
+
 .projects-section {
     width: 90%;
     margin: 0 auto;
@@ -562,3 +566,18 @@ button[type=button]:hover {
     }
 }
 
+.footer-section {
+    border-top: 1px solid #eee;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.footer {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
