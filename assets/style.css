@@ -580,6 +580,29 @@ button[type=button]:hover {
 .footer {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    height: 100%;
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .footer-section {
+        padding: 10px 10px 30px 10px;
+    }
+    .footer a {
+        display: block;
+        margin: 0px auto 10 auto;
+    }
 }
