@@ -77,7 +77,7 @@ body {
     text-decoration: none;
 }
 
-/* Social links 600px and under */
+/* Social links 800px and under */
 
 @media (max-width:800px) {
     .social img {
@@ -85,6 +85,8 @@ body {
         margin: 10px 20px;
     }
 }
+
+/* Social links 600px and under */
 
 @media (max-width:600px) {
     .social img {
@@ -98,7 +100,7 @@ body {
 @media (max-width:400px) {
     .social img {
         width: 40px;
-        margin: 10px 2px;
+        margin: 10px 10px;
     }
 }
 
