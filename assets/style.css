@@ -551,6 +551,7 @@ button[type=button]:hover {
     margin: 0 auto;
     padding: 30px 10px;
     text-align: center;
+    position: relative;
 }
 
 .footer {
@@ -581,4 +582,15 @@ button[type=button]:hover {
         display: block;
         margin: 0px auto 10 auto;
     }
+}
+
+.top-button {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.up-arrow img {
+    width: 50px;
+    margin-bottom: 20px;
 }
