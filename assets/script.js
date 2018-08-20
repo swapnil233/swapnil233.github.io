@@ -1,13 +1,16 @@
-//Initialize Firebase, has to be at the top
-var config = {
-    apiKey: "AIzaSyBlJPK4UnZBVtbfAqmkExfgB_8L4VHF0mY",
-    authDomain: "swapnil-portfolio-website.firebaseapp.com",
-    databaseURL: "https://swapnil-portfolio-website.firebaseio.com",
-    projectId: "swapnil-portfolio-website",
-    storageBucket: "swapnil-portfolio-website.appspot.com",
-    messagingSenderId: "1070607632934"
-};
-firebase.initializeApp(config);
+//Initialize Firebase, has to be at the top//////////////////////////////
+var config = {///////////////////////////////////////////////////////////
+    apiKey: "AIzaSyBlJPK4UnZBVtbfAqmkExfgB_8L4VHF0mY",///////////////////
+    authDomain: "swapnil-portfolio-website.firebaseapp.com",/////////////
+    databaseURL: "https://swapnil-portfolio-website.firebaseio.com",/////
+    projectId: "swapnil-portfolio-website",//////////////////////////////
+    storageBucket: "swapnil-portfolio-website.appspot.com",//////////////
+    messagingSenderId: "1070607632934"///////////////////////////////////
+};///////////////////////////////////////////////////////////////////////
+firebase.initializeApp(config);//////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
 
 // Implementing firebase backend:
 
