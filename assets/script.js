@@ -1,4 +1,4 @@
-//Initialize Firebase, has to be at the top//////////////////////////////
+//Initialize Firebase, has to be at the top DONT CHANGE//////////////////
 var config = {///////////////////////////////////////////////////////////
     apiKey: "AIzaSyBlJPK4UnZBVtbfAqmkExfgB_8L4VHF0mY",///////////////////
     authDomain: "swapnil-portfolio-website.firebaseapp.com",/////////////
@@ -82,26 +82,10 @@ $(document).ready(function () {
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top
         }, 1000);
-    });
-
-    // Active link switching
-    $(window).scroll(function () {
-        var scrollbarLocation = $(this).scrollTop();
-
-        scrollLink.each(function () {
-
-            var sectionOffset = $(this.hash).offset().top - 20;
-
-            if (sectionOffset <= scrollbarLocation) {
-                $(this).parent().addClass('active');
-                $(this).parent().siblings().removeClass('active');
-            }
-        })
-
     }); // End of smooth scroll
 });
 
-// Smooth scroll to top animation
+// Smooth scroll to the top animation
 $('.click').click(function (e) {
     e.preventDefault();
 
