@@ -147,6 +147,8 @@ body {
     }
     .scroll .down-arrow {
         width: 8%;
+        /*added jan 29, 2019*/
+        padding-bottom: 90px;
     }
 }
 
@@ -162,6 +164,8 @@ body {
     }
     .down-arrow {
         width: 10%;
+        /*added jan 29, 2019*/
+        padding-bottom: 90px;
     }
 }
 
