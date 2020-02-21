@@ -1,16 +1,4 @@
 <?php
-/* PROJECT INFO --------------------------------------------------------------------------------------------------------
-   Version:   1.5.2
-   Changelog: http://adaptive-images.com/changelog.txt
-
-   Homepage:  http://adaptive-images.com
-   GitHub:    https://github.com/MattWilcox/Adaptive-Images
-   Twitter:   @responsiveimg
-
-   LEGAL:
-   Adaptive Images by Matt Wilcox is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-/* CONFIG ----------------------------------------------------------------------------------------------------------- */
 
 $resolutions   = array(1382, 992, 768, 480); // the resolution break-points to use (screen widths, in pixels)
 $cache_path    = "ai-cache"; // where to store the generated re-sized images. Specify from your document root!
@@ -18,10 +6,6 @@ $jpg_quality   = 75; // the quality of any generated JPGs on a scale of 0 to 100
 $sharpen       = TRUE; // Shrinking images can blur details, perform a sharpen on re-scaled images?
 $watch_cache   = TRUE; // check that the adapted image isn't stale (ensures updated source images are re-cached)
 $browser_cache = 60*60*24*7; // How long the BROWSER cache should last (seconds, minutes, hours, days. 7days by default)
-
-/* END CONFIG ----------------------------------------------------------------------------------------------------------
------------------------- Don't edit anything after this line unless you know what you're doing -------------------------
---------------------------------------------------------------------------------------------------------------------- */
 
 /* get all of the required data from the HTTP request */
 $document_root  = $_SERVER['DOCUMENT_ROOT'];
