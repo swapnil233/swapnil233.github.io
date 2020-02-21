@@ -1,24 +1,24 @@
-//Initialize Firebase, has to be at the top DONT CHANGE//////////////////
-var config = {///////////////////////////////////////////////////////////
-    apiKey: "AIzaSyBlJPK4UnZBVtbfAqmkExfgB_8L4VHF0mY",///////////////////
-    authDomain: "swapnil-portfolio-website.firebaseapp.com",/////////////
-    databaseURL: "https://swapnil-portfolio-website.firebaseio.com",/////
-    projectId: "swapnil-portfolio-website",//////////////////////////////
-    storageBucket: "swapnil-portfolio-website.appspot.com",//////////////
-    messagingSenderId: "1070607632934"///////////////////////////////////
-};///////////////////////////////////////////////////////////////////////
-firebase.initializeApp(config);//////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////
+// Firebase init data
+var config = {
+    apiKey: "AIzaSyBlJPK4UnZBVtbfAqmkExfgB_8L4VHF0mY",
+    authDomain: "swapnil-portfolio-website.firebaseapp.com",
+    databaseURL: "https://swapnil-portfolio-website.firebaseio.com",
+    projectId: "swapnil-portfolio-website",
+    storageBucket: "swapnil-portfolio-website.appspot.com",
+    messagingSenderId: "1070607632934"
+};
 
-
+// Init Firebase
+firebase.initializeApp(config);
 
 // Implementing firebase backend:
 
-//Reference messages collection:
+// Reference messages collection:
 var messagesRef = firebase.database().ref('messages');
 
-//Save messages to firebase:
-//messagesRef is like a table/array. All I am doing is pushing the data to the table
+// Save messages to firebase:
+
+// Pushing new msg data to the messagesRef array/table
 function saveMessage(name, email, message) {
     var newMessagesRef = messagesRef.push();
     newMessagesRef.set({
@@ -35,17 +35,13 @@ document.getElementById('submit').addEventListener('click', submitForm);
 function submitForm(e) {
     e.preventDefault();
 
-    //Get all the data from the form:
+    // Get all the data from the form:
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
-    //Variable to determine if all fields filled in
-    var validated = false;
-
-    //If fields aren't empty, save and send the message
+    // If fields aren't empty, save and send the message. Otherwise, throw error
     if (name !== "" && email !== "" && message !== "") {
-        validated === true;
 
         //Submit the msg
         saveMessage(name, email, message);
@@ -58,11 +54,7 @@ function submitForm(e) {
 
         //Clear the fields after submitting:
         document.getElementById('contactForm').reset();
-    }
-
-    //If fields ARE empty, send error message
-    else {
-        validated === false;
+    } else {
         //Display not-sent message, then erase after 10 seconds:
         document.getElementsByClassName('message-not-sent')[0].style.display = "block";
         setTimeout(() => {
@@ -71,21 +63,18 @@ function submitForm(e) {
     }
 };
 
-// Smooth scroll code made using JQuery:
+// Smooth scroll to under the arrow
 $(document).ready(function () {
-
     var scrollLink = $('.scroll');
-
-    // Smooth scrolling
     scrollLink.click(function (e) {
         e.preventDefault();
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top
         }, 1000);
-    }); // End of smooth scroll
+    });
 });
 
-// Smooth scroll to the top animation
+// Smooth scroll to the top
 $('.click').click(function (e) {
     e.preventDefault();
     $('html, body').animate({ 
